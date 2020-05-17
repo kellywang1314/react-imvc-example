@@ -1,13 +1,11 @@
-import { Config } from 'react-imvc'
 
 let PORT = 3000
 const ROOT = __dirname
 
-const config: Partial<Config> = {
+export default {
 	root: ROOT, // 项目根目录
 	port: PORT, // server 端口号
 	routes: 'routes', // 服务端路由目录
-	layout: 'Layout'
+	layout: 'Layout',
+	SSR:false
 }
-
-export default config
